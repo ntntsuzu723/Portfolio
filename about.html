@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ABOUT | Natsumi Suzuki</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;700&family=Cormorant+Garamond:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "on-tertiary": "#eafeea",
+        "on-primary-container": "#525151",
+        "on-secondary-fixed-variant": "#5b5b5b",
+        surface: "#faf9f7",
+        "secondary-dim": "#535353",
+        "error-dim": "#4e0309",
+        "primary-dim": "#535252",
+        "on-secondary-container": "#515252",
+        "outline-variant": "#afb3b0",
+        "secondary-fixed-dim": "#d5d4d4",
+        "surface-container-high": "#e6e9e6",
+        "surface-bright": "#faf9f7",
+        tertiary: "#526354",
+        "surface-container": "#edeeeb",
+        "on-surface-variant": "#5c605d",
+        "on-tertiary-fixed": "#3c4e3f",
+        "on-secondary": "#faf8f8",
+        outline: "#777c79",
+        "surface-container-lowest": "#ffffff",
+        "surface-tint": "#5f5e5e",
+        "surface-variant": "#e0e3e0",
+        "tertiary-fixed-dim": "#d7ebd7",
+        "tertiary-container": "#e5f9e5",
+        "secondary-container": "#e3e2e2",
+        primary: "#5f5e5e",
+        "on-surface": "#2f3331",
+        "on-error": "#fff7f6",
+        "inverse-primary": "#ffffff",
+        "error-container": "#fe8983",
+        "on-primary-fixed-variant": "#5c5b5b",
+        "inverse-surface": "#0d0e0e",
+        "inverse-on-surface": "#9d9d9b",
+        "on-tertiary-fixed-variant": "#596b5b",
+        "on-primary-fixed": "#403f3f",
+        "primary-fixed-dim": "#d6d4d3",
+        "primary-fixed": "#e5e2e1",
+        "on-background": "#2f3331",
+        "tertiary-dim": "#465748",
+        error: "#9f403d",
+        secondary: "#5f5f5f",
+        background: "#faf9f7",
+        "surface-container-low": "#f3f4f1",
+        "surface-container-highest": "#e0e3e0",
+        "surface-dim": "#d6dbd7",
+        "primary-container": "#e5e2e1",
+        "on-error-container": "#752121",
+        "on-tertiary-container": "#4e6051",
+        "tertiary-fixed": "#e5f9e5",
+        "on-secondary-fixed": "#3f3f3f",
+        "secondary-fixed": "#e3e2e2",
+        "on-primary": "#faf7f6"
+      },
+      borderRadius: {
+        DEFAULT: "0.125rem",
+        lg: "0.25rem",
+        xl: "0.5rem",
+        full: "0.75rem"
+      },
+      fontFamily: {
+        headline: ["Libre Caslon Text"],
+        body: ["Inter"],
+        label: ["Inter"],
+        display: "Libre Caslon Text"
+      }
+    }
+  }
+};
+</script>
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #faf9f7;
+    color: #2f3331;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .nav-link {
+    font-family: 'Inter', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: #aaa;
+    text-decoration: none;
+    padding: 0 0.1rem;
+    transition: color 0.3s ease;
+  }
+  .nav-link:hover {
+    color: #1a1918;
+  }
+  .nav-link-active {
+    color: #1a1918;
+    border-bottom: 1px solid #1a1918;
+    padding-bottom: 2px;
+  }
+  .section-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .hero-name-en {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: clamp(1.6rem, 3.2vw, 3rem);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #1a1918;
+    line-height: 1.15;
+    display: block;
+  }
+  .hero-name-ja {
+    font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+    font-weight: 300;
+    font-size: clamp(0.95rem, 1.6vw, 1.35rem);
+    letter-spacing: 0.08em;
+    color: #1a1918;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+    display: block;
+  }
+  .logo-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    word-spacing: 0.45em;
+    color: #1a1918;
+    text-decoration: none;
+    display: inline-block;
+  }
+</style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-container selection:text-on-tertiary-container">
+
+<!-- TopNavBar -->
+<nav class="bg-[#faf9f7]/80 backdrop-blur-xl top-0 sticky z-50 transition-all duration-500 ease-in-out">
+  <div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+    <a class="logo-text" href="index.html">Natsumi&nbsp;Suzuki</a>
+    <div class="flex gap-8 items-center">
+      <a class="nav-link" href="index.html">Works</a>
+      <a class="nav-link nav-link-active" href="about.html">About</a>
+    </div>
+  </div>
+</nav>
+
+<main class="max-w-screen-2xl mx-auto px-8 lg:px-16 pt-24 pb-32">
+
+  <!-- Profile Header: Asymmetric 2-Column Layout -->
+  <section class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start mb-32">
+    <div class="lg:col-span-7 order-2 lg:order-1">
+      <div class="space-y-8">
+        <div>
+          <span class="font-label text-xs tracking-widest uppercase text-secondary mb-4 block">Service Designer</span>
+          <h1 class="mb-2 flex flex-col items-start gap-1">
+            <span class="hero-name-en">Natsumi Suzuki</span>
+            <span class="hero-name-ja">鈴木　夏未</span>
+          </h1>
+          <div class="flex items-center gap-2 text-secondary font-label text-sm mt-4">
+            <span class="material-symbols-outlined text-base">location_on</span>
+            <span>Tokyo, Japan</span>
+          </div>
+        </div>
+        <div class="space-y-6 text-on-surface-variant text-base leading-loose pt-2">
+          <p>2017年NTTデータ入社後、メディア・エンタメ業界向け営業・コンサルタントとして、デザインアプローチを取り入れたファン理解、新規サービス企画等に従事。</p>
+          <p>2023年にNTTデータ デザイン組織Tangityへ参画し、サービスデザイナーとして自動車、食品、通信、ヘルスケアなど幅広いクライアントのプロジェクトにて、ユーザリサーチやプロトタイピング、サービス設計に携わる。直近では、Tangity海外スタジオと連携したグローバル案件やサービスデザイン育成企画等に従事。 何事も経験主義。</p>
+          <p>趣味は旅行、テニス。</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-5 order-1 lg:order-2">
+      <div class="relative group">
+        <img class="w-full aspect-[4/5] object-cover rounded-lg transition-all duration-700 ease-in-out shadow-sm" alt="Natsumi Suzuki" src="10_About/about_profile.jpg"/>
+        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-tertiary-container/30 rounded-full blur-3xl -z-10 group-hover:scale-150 transition-transform duration-700"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Skills Section -->
+  <section class="mb-40">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+      <div class="lg:col-span-4">
+        <h2 class="text-3xl border-l-2 border-tertiary pl-6 section-heading">Design Skills</h2>
+      </div>
+      <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+
+        <!-- Tool Skills -->
+        <div class="bg-surface-container-low p-10 rounded-xl">
+          <div class="flex items-center gap-3 mb-8">
+            <span class="material-symbols-outlined text-tertiary">terminal</span>
+            <h3 class="font-label text-sm font-bold tracking-widest uppercase">TOOL Skills</h3>
+          </div>
+          <ul class="space-y-6">
+            <li class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+              <span>Figma / Adobe Suite</span>
+              <span class="text-xs font-label text-secondary">Expert</span>
+            </li>
+            <li class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+              <span>Miro / FigJam</span>
+              <span class="text-xs font-label text-secondary">Advanced</span>
+            </li>
+            <li class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+              <span>HTML / CSS (Tailwind)</span>
+              <span class="text-xs font-label text-secondary">Intermediate</span>
+            </li>
+            <li class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+              <span>Notion / Slack Automation</span>
+              <span class="text-xs font-label text-secondary">Advanced</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Knowledge & Expertise -->
+        <div class="bg-surface-container-low p-10 rounded-xl">
+          <div class="flex items-center gap-3 mb-8">
+            <span class="material-symbols-outlined text-tertiary">psychology</span>
+            <h3 class="font-label text-sm font-bold tracking-widest uppercase">Knowledge &amp; Expertise</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-1.5 bg-tertiary-container text-on-tertiary-container text-xs font-label rounded-full">Service Blueprinting</span>
+            <span class="px-4 py-1.5 bg-tertiary-container text-on-tertiary-container text-xs font-label rounded-full">User Research</span>
+            <span class="px-4 py-1.5 bg-tertiary-container text-on-tertiary-container text-xs font-label rounded-full">Workshop Facilitation</span>
+            <span class="px-4 py-1.5 bg-tertiary-container text-on-tertiary-container text-xs font-label rounded-full">Design Thinking</span>
+            <span class="px-4 py-1.5 bg-tertiary-container text-on-tertiary-container text-xs font-label rounded-full">Prototyping</span>
+            <span class="px-4 py-1.5 bg-tertiary-container text-on-tertiary-container text-xs font-label rounded-full">Business Modeling</span>
+            <span class="px-4 py-1.5 bg-tertiary-container text-on-tertiary-container text-xs font-label rounded-full">Product Strategy</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Background Section -->
+  <section class="mb-40">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+      <div class="lg:col-span-4">
+        <h2 class="text-3xl border-l-2 border-tertiary pl-6 section-heading">Background</h2>
+      </div>
+      <div class="lg:col-span-8 space-y-12">
+
+        <div class="relative pl-8">
+          <div class="absolute left-0 top-0 w-[1px] h-full bg-outline-variant/30"></div>
+          <div class="absolute left-[-4px] top-2 w-2 h-2 rounded-full bg-tertiary"></div>
+          <div class="mb-2 flex items-center gap-4">
+            <span class="font-label text-xs text-secondary tracking-widest uppercase">2013 — 2017</span>
+          </div>
+          <h4 class="font-bold text-lg mb-1">Bachelor of Economics</h4>
+          <p class="text-on-surface-variant">Rikkyo University, Tokyo</p>
+        </div>
+
+        <div class="relative pl-8">
+          <div class="absolute left-0 top-0 w-[1px] h-full bg-outline-variant/30"></div>
+          <div class="absolute left-[-4px] top-2 w-2 h-2 rounded-full bg-tertiary"></div>
+          <div class="mb-2 flex items-center gap-4">
+            <span class="font-label text-xs text-secondary tracking-widest uppercase">2017 — 2023</span>
+          </div>
+          <h4 class="font-bold text-lg mb-1">Sales, Consultant</h4>
+          <p class="text-on-surface-variant">Media &amp; Entertainment Division, NTT DATA</p>
+        </div>
+
+        <div class="relative pl-8">
+          <div class="absolute left-0 top-0 w-[1px] h-2 bg-outline-variant/30"></div>
+          <div class="absolute left-[-4px] top-2 w-2 h-2 rounded-full bg-tertiary"></div>
+          <div class="mb-2 flex items-center gap-4">
+            <span class="font-label text-xs text-secondary tracking-widest uppercase">2023 — Present</span>
+          </div>
+          <h4 class="font-bold text-lg mb-1">Service Designer</h4>
+          <p class="text-on-surface-variant">Tangity, Consulting Division, NTT DATA</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles Section -->
+  <section class="mb-40">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+      <div class="lg:col-span-4">
+        <h2 class="text-3xl border-l-2 border-tertiary pl-6 section-heading">Articles</h2>
+      </div>
+      <div class="lg:col-span-8 grid grid-cols-1 gap-8">
+
+        <!-- Article 1 -->
+        <a class="group block overflow-hidden bg-surface-container-lowest hover:bg-surface-container transition-colors duration-500 rounded-lg" href="https://designing.jp/tangity-elisa-okabe-suzuki" target="_blank">
+          <div class="grid grid-cols-1 md:grid-cols-12">
+            <div class="md:col-span-4 overflow-hidden aspect-square">
+              <img alt="Article thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" src="10_About/about_articles_1.jpeg"/>
+            </div>
+            <div class="md:col-span-8 p-8 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-secondary text-xs font-label uppercase tracking-wider">Designing</span>
+                  <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity duration-300">open_in_new</span>
+                </div>
+                <h4 class="font-body font-bold text-xl mb-4 leading-snug">グローバルなチームによる多層視点のデザイン――NTTデータ「Tangity」が手がける、大阪・関西万博プロジェクトの軌跡</h4>
+                <p class="text-on-surface-variant text-sm line-clamp-2">大阪・関西万博のプロジェクトにおいて、多層的な視点からどのようにデザインが推進されているのか、その舞台裏に迫ります。</p>
+              </div>
+              <div class="mt-6 flex items-center gap-2 text-tertiary">
+                <span class="text-xs font-bold font-label uppercase tracking-widest">Read Article</span>
+                <span class="material-symbols-outlined text-sm group-hover:translate-x-2 transition-transform duration-300">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Article 2 -->
+        <a class="group block overflow-hidden bg-surface-container-lowest hover:bg-surface-container transition-colors duration-500 rounded-lg" href="https://www.nttdata.com/global/en/insights/focus/2025/how-genai-boosts-cx-design-creating-a-global-promotion-for-expo-2025" target="_blank">
+          <div class="grid grid-cols-1 md:grid-cols-12">
+            <div class="md:col-span-4 overflow-hidden aspect-square">
+              <img alt="Article thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" src="10_About/about_articles_2.jpg"/>
+            </div>
+            <div class="md:col-span-8 p-8 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-secondary text-xs font-label uppercase tracking-wider">NTT DATA</span>
+                  <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity duration-300">open_in_new</span>
+                </div>
+                <h4 class="font-body font-bold text-xl mb-4 leading-snug">How GenAI boosts CX Design: Creating a Global Promotion for Expo 2025</h4>
+                <p class="text-on-surface-variant text-sm line-clamp-2">Envisioning the future and exploring how generative AI accelerates the design process for global-scale projects.</p>
+              </div>
+              <div class="mt-6 flex items-center gap-2 text-tertiary">
+                <span class="text-xs font-bold font-label uppercase tracking-widest">Read Article</span>
+                <span class="material-symbols-outlined text-sm group-hover:translate-x-2 transition-transform duration-300">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Connections Section -->
+  <section class="mb-24">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+      <div class="lg:col-span-4">
+        <h2 class="text-3xl border-l-2 border-tertiary pl-6 section-heading">Connections</h2>
+      </div>
+      <div class="lg:col-span-8">
+        <div class="flex flex-col gap-8">
+          <a class="flex items-center justify-between p-8 bg-on-surface text-surface rounded-lg group hover:opacity-90 transition-opacity w-full" href="https://www.linkedin.com/in/natsumi-suzuki-597a4b1a4/" target="_blank">
+            <div class="flex items-center gap-6">
+              <div class="w-12 h-12 bg-surface/10 rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined text-surface">link</span>
+              </div>
+              <div>
+                <h4 class="font-body font-bold text-lg">LinkedIn Profile</h4>
+                <p class="text-surface-variant text-sm">Professional network &amp; contact</p>
+              </div>
+            </div>
+            <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#f3f4f1] mt-auto border-t border-[#2f3331]/5">
+  <div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-screen-2xl mx-auto">
+    <p class="text-xs tracking-widest uppercase text-[#757575] mb-6 md:mb-0">© 2026 Natsumi Suzuki. All rights reserved.</p>
+    <div class="flex gap-8">
+      <a class="text-xs tracking-widest uppercase text-[#757575] hover:text-[#2f3331] transition-colors duration-300" href="https://www.linkedin.com/in/natsumi-suzuki-597a4b1a4/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
